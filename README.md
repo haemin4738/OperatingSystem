@@ -1,5 +1,5 @@
 # OperatingSystem
-운영체제 수업
+운영체제 수업 팀프로젝트
 
 cpu 스케줄링 시뮬레이터
 FCFS, RR, SPN, SRTN, HRRN, OBG 6가지 알고리즘 적용
@@ -57,3 +57,13 @@ FCFS, RR, SPN, SRTN, HRRN, OBG 6가지 알고리즘 적용
  - Response ratio = (WT + BT) / BT (응답률)
      - SPN의 장점 + Starvation 방지
      - 실행 시간 예측 기법 필요(overhead 발생)
+  
+# OBG(One By Group)
+ - 팀 제작 알고리즘
+ - cpu를 할당하는 부분에 있어 group라는 속성을 추가하여 한 group에서는 하나의 프로세스만 실행될 수 있도록 구현
+ - 비선점 알고리즘
+예상 장점
+ - 충돌 방지를 통한 안정성 확보
+예상 단점
+ - FCFS와 같이 Convey Effect와 긴 평균 응답시간
+ - 프로세스가 코어에 있는지를 확인하고 제어하는 방식으로 멀티프로세서에서만 유효할 것이라 예상
